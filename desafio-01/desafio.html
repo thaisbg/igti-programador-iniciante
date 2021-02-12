@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de salários</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="desafio.css">
+    <script type="text/javascript" src="desafio.js"></script>
+
+</head>
+<body>
+
+    <div class = "principal">
+    <div class = "header">
+    <img src=".\money.png" alt="Emoji Dólar">
+    <h1>análise de salários</h1>
+    <p>Resolução do primeiro desafio do bootcamp Programador de Software Iniciante do IGTI.</p>
+    </div>
+    <div class = "conteudo">
+    <h2>> escolha uma opção abaixo:</h2>
+    <button class="btn" onclick="maiorSalario()">Maior salário</button>
+    <button class="btn" onclick="menorSalario()">Menor salário</button>
+    <button class="btn" onclick="media()">Média</button>
+    <p class="resultado" id="resultado"></p>
+    <hr>
+    <h2>> confira informações por setor:</h2>
+    <select onchange="maiorSalariodoSetor(setor); menorSalariodoSetor(setor); mediaSetor(setor)" id="setor">
+    <option value="">Escolha um setor</option>
+    <option id="setor" value="Administrativo">Administrativo</option>
+    <option id="setor" value="Comercial">Comercial</option>
+    <option id="setor" value="Produção">Produção</option>
+    </select>
+    <h3>Maior salário do setor:</h3>
+    <p id="maiorSalarioSetor"></p>
+    <hr>
+    <h3>Menor salário do setor:</h3>
+    <p id="menorSalarioSetor"></p>
+    <hr>
+    <h3>Média salarial do setor:</h3>
+    <p id="mediaSetor"></p>
+    </div>
+    </div>
+</body>
+</html>
